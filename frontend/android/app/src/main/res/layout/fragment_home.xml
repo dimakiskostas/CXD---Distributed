@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <EditText
+        android:id="@+id/textViewUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:inputType="text"
+        android:text="@string/username"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalDistanceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectFile"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textViewUsernameLable"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="@string/username_label"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewUsername"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/textViewUsername" />
+
+    <TextView
+        android:id="@+id/textViewAverageSpeedValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/dots"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalDistanceLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewAverageSpeedLabel" />
+
+    <TextView
+        android:id="@+id/textViewTotalTimeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/dots"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalDistanceLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewTimeLabel" />
+
+    <TextView
+        android:id="@+id/textViewTotalElevationValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/dots"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalDistanceLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewElevationLabel" />
+
+    <TextView
+        android:id="@+id/textViewAverageSpeedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/average_speed"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeLabel"
+        tools:text="Average speed:" />
+
+    <TextView
+        android:id="@+id/textViewTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/total_time"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewElevationLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewElevationLabel"
+        tools:text="Total time:" />
+
+    <TextView
+        android:id="@+id/textViewElevationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/total_elevation"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTotalDistanceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalDistanceLabel"
+        tools:text="Total elevation:" />
+
+    <TextView
+        android:id="@+id/textViewSelectFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/select_a_gpx_file"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:entries="@array/file_list_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsername" />
+
+    <Button
+        android:id="@+id/buttonSendFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/send_file"
+        android:background="@color/purple_200"
+        app:iconTint="@color/purple_200"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:rippleColor="@color/purple_200" />
+
+    <TextView
+        android:id="@+id/textViewTotalDistanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/total_distance"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSendFile"
+        tools:text="Total distance:" />
+
+    <TextView
+        android:id="@+id/textViewTotalDistanceValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/dots"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalDistanceLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalDistanceLabel" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="138dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/_43449988_1288841058683569_386499818967695791_n_removebg_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarForGpx"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

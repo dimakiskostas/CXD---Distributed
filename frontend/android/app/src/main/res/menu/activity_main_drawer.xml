@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/_43449988_1288841058683569_386499818967695791_n_removebg_preview"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_user_statistics"
+            android:icon="@drawable/_43449988_1288841058683569_386499818967695791_n_removebg_preview"
+            android:title="@string/menu_user_statistics" />
+        <item
+            android:id="@+id/nav_global_statistics"
+            android:icon="@drawable/_43449988_1288841058683569_386499818967695791_n_removebg_preview"
+            android:title="@string/menu_global_statistics" />
+        <item
+            android:id="@+id/nav_Contact"
+            android:icon="@drawable/_43449988_1288841058683569_386499818967695791_n_removebg_preview"
+            android:title="Contact" />
+    </group>
+</menu>

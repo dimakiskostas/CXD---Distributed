@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Contact.ContactFragment"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="138dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_43449988_1288841058683569_386499818967695791_n_removebg_preview" />
+
+    <TextView
+        android:id="@+id/textViewContactTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="@string/description"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDimitrisMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="p3200127@aueb.gr"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewKostasMail"
+        app:layout_constraintStart_toStartOf="@+id/textViewKostasMail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKostasMail" />
+
+    <TextView
+        android:id="@+id/textViewXristosName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Polyzos Xristos"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewDimitrisName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDimitrisName" />
+
+    <TextView
+        android:id="@+id/textViewXristosMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="p3190173@aueb.gr"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDimitrisMail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewDimitrisMail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDimitrisMail" />
+
+    <TextView
+        android:id="@+id/textViewDimitrisName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Panos Dimitrios"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewKostasName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKostasName" />
+
+    <TextView
+        android:id="@+id/textViewKostasMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:text="p3200255@aueb.gr"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toEndOf="@+id/textViewKostasName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContactTitle" />
+
+    <TextView
+        android:id="@+id/textViewKostasName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:text="Dimakis Konstantinos"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContactTitle" />
+
+    <ImageButton
+        android:id="@+id/FacebookButton"
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="Facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/facebook_logo" />
+
+    <ImageButton
+        android:id="@+id/InstagramButton"
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="Instagram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/FacebookButton"
+        app:srcCompat="@drawable/instagram_logo" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="370dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:text="Welcome to our revolutianary running and health app, your ultimate companion on the path to fitness and well-being! Get ready to unleash your full potential as you embark on a transformative journey. With our cutting-edge features, personalized workouts, and expert guidance, achieving your fitness goals has never been easier or more enjoyable. Track your runs, monitor your progress and unlock a healthier, happier you. It's time to lace up your shoes, break free from limitations. Let's run towards greatness together!"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContactTitle" />
+
+    <ImageButton
+        android:id="@+id/TwitterLogoButton"
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/twitter_logo"
+        android:contentDescription="Twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/FacebookButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

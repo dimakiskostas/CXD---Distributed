@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.GlobalStatisticsFragment">
+
+    <TextView
+        android:id="@+id/UserPerformanceAverageSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="User Performance"
+        app:layout_constraintEnd_toEndOf="@+id/UserPerformanceTotalTimeText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UserPerformanceTotalTimeText"
+        app:layout_constraintTop_toTopOf="@+id/GlobalAverageAvgAverageSpeedText" />
+
+    <TextView
+        android:id="@+id/GlobalAverageAvgAverageSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/global_avg"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/GlobalAverageSpeedText" />
+
+    <TextView
+        android:id="@+id/GlobalAverageSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/global"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalTotalElevationText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/GlobalTotalElevationText"
+        app:layout_constraintTop_toBottomOf="@+id/labelSpeedGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/UserPerformanceTotalTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="User Performance"
+        app:layout_constraintEnd_toEndOf="@+id/UserPerformanceTotalElevationText"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/UserPerformanceTotalElevationText"
+        app:layout_constraintTop_toTopOf="@+id/GlobalAvgTotalTimeText" />
+
+    <TextView
+        android:id="@+id/GlobalAvgTotalTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/global_avg"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/GlobalTotalTimeText" />
+
+    <TextView
+        android:id="@+id/GlobalTotalTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/global"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalTotalElevationText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/GlobalTotalElevationText"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalTimeGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/UserPerformanceTotalElevationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="User Performance"
+        app:layout_constraintEnd_toEndOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/GlobalAvgTotalElevationText" />
+
+    <TextView
+        android:id="@+id/GlobalAvgTotalElevationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/global_avg"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/GlobalTotalElevationText" />
+
+    <TextView
+        android:id="@+id/GlobalTotalElevationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/global"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalTotalDistanceText"
+        app:layout_constraintStart_toStartOf="@+id/GlobalTotalDistanceText"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalElevationGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewUserTimePerformance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewAverageTimeGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewTotalTimeGlobalStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/dots"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalTotalTimeText"
+        app:layout_constraintStart_toStartOf="@+id/GlobalTotalTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/GlobalTotalTimeText" />
+
+    <TextView
+        android:id="@+id/labelTotalTimeGlobalStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/total_time"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/labelTotalElevationGlobalStatistics"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelTotalElevationGlobalStatistics"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalElevationGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewAverageTimeGlobalStatistics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalTimeGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewUserSpeedPerformance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewAverageSpeedGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/labelSpeedGlobalStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/average_speed"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/labelTotalTimeGlobalStatistics"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelTotalTimeGlobalStatistics"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalTimeGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewSpeedGlobalStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/dots"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAverageSpeedText"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAverageSpeedText"
+        app:layout_constraintTop_toBottomOf="@+id/GlobalAverageSpeedText" />
+
+    <TextView
+        android:id="@+id/textViewAverageSpeedGlobalStatistics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewSpeedGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/UserPerformanceTotalDistanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="User Performance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/GlobalAvgTotalDistanceText" />
+
+    <TextView
+        android:id="@+id/GlobalAvgTotalDistanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/global_avg"
+        app:layout_constraintEnd_toStartOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintStart_toEndOf="@+id/GlobalTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/GlobalTotalDistanceText" />
+
+    <TextView
+        android:id="@+id/textViewAverageDistanceGlobalStatistics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalDistanceGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewUserDistancePerformance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintStart_toStartOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewAverageDistanceGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewUserElevationPerformance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UserPerformanceTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewAverageElevationGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewAverageElevationGlobalStatistics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GlobalAvgTotalDistanceText"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalElevationGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/labelTotalElevationGlobalStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/total_elevation"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/labelTotalDistanceGlobalStatistics"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/labelTotalDistanceGlobalStatistics"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalDistanceGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewTotalElevationGlobalStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/dots"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalTotalElevationText"
+        app:layout_constraintStart_toStartOf="@+id/GlobalTotalElevationText"
+        app:layout_constraintTop_toBottomOf="@+id/GlobalTotalElevationText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="138dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/_43449988_1288841058683569_386499818967695791_n_removebg_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/GlobalStatisticsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/global_statistics"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTotalDistanceGlobalStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/total_distance"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GlobalStatisticsTitle" />
+
+    <TextView
+        android:id="@+id/textViewTotalDistanceGlobalStatistics"
+        android:layout_width="76dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="-8dp"
+        android:text="@string/dots"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GlobalTotalDistanceText"
+        app:layout_constraintStart_toStartOf="@+id/GlobalTotalDistanceText"
+        app:layout_constraintTop_toBottomOf="@+id/GlobalTotalDistanceText" />
+
+    <Button
+        android:id="@+id/buttonshowglobalstatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/show_global_statistics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarForGlobalStatistics"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/GlobalTotalDistanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/global"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalDistanceGlobalStatistics" />
+
+    <TextView
+        android:id="@+id/textViewGlobalFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:text="textview"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="112dp"
+        android:text="@string/frequency"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGlobalFrequency"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="@+id/labelSpeedGlobalStatistics"
+        app:layout_constraintTop_toBottomOf="@+id/labelSpeedGlobalStatistics" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

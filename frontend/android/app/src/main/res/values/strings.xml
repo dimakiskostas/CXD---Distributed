@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Distributed</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CXD Exercise</string>
+    <string name="nav_header_subtitle">Distributed Systems Project</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_user_statistics">User statistics</string>
+    <string name="menu_global_statistics">Global statistics</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+    <string name="select_a_gpx_file">Select a GPX file</string>
+    <string name="send_file">Send file</string>
+    <string name="dots">...</string>
+    <string name="total_elevation">Total elevation:</string>
+    <string name="total_time">Total time:</string>
+    <string name="average_speed">Average speed:</string>
+    <string name="total_distance">Total distance:</string>
+    <string name="results_for_your_session">Results for your session</string>
+    <string name="leaderboard">LeaderBoard</string>
+    <string name="global_statistics">Global Statistics</string>
+    <string name="user_statistics">User Statistics</string>
+    <string name="show_user_statistics">Show user statistics</string>
+    <string name="logo">logo</string>
+    <string name="username">Bob</string>
+    <string name="username_label">Username</string>
+    <string name="average_statistics">Average Statistics</string>
+    <string name="frequency">Frequency</string>
+    <string name="daily_goal">Daily Goal</string>
+    <string name="contact">Contact</string>
+    <string name="user_perf">User perf</string>
+    <string name="global_avg">Global Avg</string>
+    <string name="todo">TODO</string>
+    <string name="global">Global</string>
+    <string name="show_global_statistics">Show global statistics</string>
+    <string name="description">Description</string>
+
+    <string-array name="file_list_array">
+        <item>Route 1</item>
+        <item>Route 2</item>
+        <item>Route 3</item>
+        <item>Route 4</item>
+        <item>Route 5</item>
+        <item>Route 6</item>
+        <item>Segment 1</item>
+        <item>Segment 2</item>
+    </string-array>
+</resources>
