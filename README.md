@@ -4,11 +4,10 @@
 
 <p>CXD exrcise is an android app that is used to track your activity. <br> It collects as input a gpx file and each user can view different statistics such as distance, elevation , time and speed in global and personal level</p>
 
-<div align="center">
-       <img src="/image/20240403_214945.png>
-       <img src="/image/20240403_214959.png>      
-       <img src="/image/20240403_215015.png>      
-       <img src="/image/20240403_215015.png>                           
+<div align="center"><img src="/image/20240403_214945.png" width="200">
+                     <img src="/image/20240403_214959.png" width="200">
+       <img src="/image/20240403_215015.png" width="200">
+       
 </div>
 
 <h2>Input info</h2>
